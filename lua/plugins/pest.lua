@@ -1,17 +1,18 @@
 return {
-
   {
+    -- Add neotest-pest plugin for running PHP tests.
+    -- A package is also available for PHPUnit if needed.
     "nvim-neotest/neotest",
     dependencies = {
-      "V13Axel/neotest-pest",
-      "nvim-treesitter/nvim-treesitter",
+      {
+        "jradtilbrook/neotest-pest",
+        branch = "ts-fix",
+      },
     },
-    config = function()
-      require("neotest").setup({
-        adapters = {
-          require("neotest-pest"),
-        },
-      })
-    end,
+    opts = {
+      adapters = {
+        require("neotest-pest")({}),
+      },
+    },
   },
 }

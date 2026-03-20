@@ -15,9 +15,9 @@ return {
         fish = { "fish_indent" },
         sh = { "shfmt" },
         php = { "pint" },
-        blade = { "blade-formatter", "rustywind" },
+        -- blade = { "blade-formatter", "rustywind" },
         python = { "black" },
-        javascript = { "prettierd" },
+        -- javascript = { "prettierd" },
         -- rust = { "rustfmt" },
       },
       -- LazyVim will merge the options you set here with builtin formatters.
