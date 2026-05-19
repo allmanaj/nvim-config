@@ -15,7 +15,7 @@ return {
         fish = { "fish_indent" },
         sh = { "shfmt" },
         php = { "pint" },
-        -- blade = { "blade-formatter", "rustywind" },
+        blade = { "blade-formatter" },
         python = { "black" },
         -- javascript = { "prettierd" },
         -- rust = { "rustfmt" },

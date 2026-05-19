@@ -13,7 +13,6 @@ local function map(mode, lhs, rhs, opts)
     vim.keymap.set(mode, lhs, rhs, opts)
   end
 end
-
 map("n", "<leader>gd", function()
   Util.float_term(
     { "lazydocker", "-f", Util.get_root() .. "docker-compose.yml" },
